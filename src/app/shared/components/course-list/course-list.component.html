@@ -1,0 +1,9 @@
+<!--Se incluyen los componentes-->
+<div class="row">
+    <div class="col-md-{{ classShowCourse }}" *ngFor="let course of courses">
+        <app-course-top [course]="course"></app-course-top>
+    </div>
+  </div>
+
+
+

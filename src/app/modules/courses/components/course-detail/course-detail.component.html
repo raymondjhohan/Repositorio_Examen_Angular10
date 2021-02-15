@@ -1,0 +1,44 @@
+<div class="row" *ngIf="course">
+    <div class="col-md-6">
+      <img [src]="course.image" width="50%" height="auto">
+      <h2> {{ course.name }}</h2>
+      <p style="text-align: justify;">
+        {{ course.summary }}
+      </p>
+    </div>
+    <div class="col-md-6">
+  
+    
+      <div class="col-md-5" style="color:navy;">
+        <h3>Detalle del Curso </h3>
+      </div>
+        <div class="col-md-4">
+          <p>
+            <b>Precio:</b> {{ course.price }}</p>
+        </div>
+   
+        <div class="col-md-4">
+          <p>
+            <b>Duracion:</b> {{ course.duration }} horas </p>
+        </div>
+        <div class="col-md-4">
+          <p>
+            <b>N° de Lecciones:</b> {{ course.lessons }} </p>
+        </div>
+        <div class="col-md-5">
+          <p>
+            <b>N° de Estudiantes:</b> {{ course.students }} </p>
+        </div>
+        <div class="col-md-4">
+          <p>
+            <b>Lenguaje:</b> {{ course.language }} </p>
+        </div>
+        <div class="col-md-4">
+          <p>
+            <b>Inicio:</b> {{ course.deadline}} </p>
+        </div>
+       
+      
+     
+    </div>
+  </div>

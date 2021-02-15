@@ -1,0 +1,35 @@
+<form class="form-signin" style="padding-top: 3%"  [formGroup]="contactForm" (ngSubmit)="onsubmit()">
+    <table>
+        <tr>
+            <td style="text-align: center;">
+                <h1 class="h3 mb-3 font-weight-normal">Leave Us Message</h1>
+            </td>
+        </tr>
+        <table>
+            <tr>
+                <td>
+                    <input type="text" class="form-control" placeholder="nombres" autofocus formControlName="nombres">
+                </td>
+                <td>
+                    <input type="text" class="form-control" placeholder="email" formControlName="email">
+                </td>
+                <td>
+                    <input type="text" class="form-control" placeholder="telefono" formControlName="telefono">
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <textarea class="form-control z-depth-1"  id="comentario" formControlName="comentario" rows="3" placeholder="Ingrese aqui su comentario..."></textarea>
+                </td>
+               
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button class="btn btn-lg btn-primary" type="submit" style="background-color: red;">Enviar</button>
+                </td>
+            </tr>
+        </table>
+    </table> 
+
+</form>

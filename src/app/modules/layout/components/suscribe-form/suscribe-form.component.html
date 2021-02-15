@@ -1,0 +1,21 @@
+<!--<h2>|Componente de suscripcion "SUSCRIBE-FORM"</h2>-->
+<div>
+    <div>
+        <h3>Newsletters</h3>
+        <ul class="list-unstyled quick-links">
+            <p>Ingrese su email para suscribirse a nuestros boletines.</p>
+            <form class="form-inline my-2 my-lg-0" [formGroup]="suscribeForm">
+                <table>
+                    <tr>
+                        <td>
+                            <input class="form-control mr-sm-2" type="search" placeholder="Enter Your Email" aria-label="Search" formControlName="email">
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-success my-2 my-sm-0" style="background-color: red; color: aliceblue;" type="submit">Send</button>    
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </ul>
+    </div>
+</div>
